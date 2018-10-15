@@ -1,13 +1,15 @@
 
-# Co-efficient of Determination
+# Coefficient of Determination
 
+## Introduction
 For linear regression analysis, as we saw earlier, the straight does not **fully** describe the relationship between variables and there is always some error. In order to determine the "goodness of fit** of the fitted line, we need some measure to show the predictive performance of the model. In this lesson, we shall look at R<sup>2</sup> (pronounced r squared) as a coefficient of determination for our fitted model.
 
-### Objectives
-You will be able to 
+## Objectives
+You will be able to:
+
 * Describe squared error as means to identify the difference between predicted and actual values
 
-* Calculate the co-efficient of deteremination (r-squared) for a given regression line
+* Calculate the coefficient of deteremination (R-squared) for a given regression line
 
 ## R-Squared
 > **R-squared or coefficient of determination is a statistical measure that is used to assess the goodness of fit of a regression model.**
