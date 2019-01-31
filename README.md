@@ -30,15 +30,15 @@ The mathematical formula to calculate R-squared for a linear regression line is 
 
 ![](rs2.png)
 
-* SS<sub>RES</sub> is the **residual** sum of squared errors of our regression model also known as **SSE** (Sum of Squared Errors). It is the error between real and predicted values. 
+* SS<sub>RES</sub> (also called RSS) is the **residual** sum of squared errors of our regression model also known as **SSE** (Sum of Squared Errors). It is the error between real and predicted values. 
 
-* SS<sub>TOT</sub> i.e. the difference between real and mean y values. **Total** sum of squared error , calculated from the baseline model. This is also known as **SST** (Sum pf Squared Total)
+* SS<sub>TOT</sub> (also called TSS) i.e. the difference between real and mean y values. **Total** sum of squared error , calculated from the baseline model. This is also known as **SST** (Sum pf Squared Total)
 
-Below is a graphical depiction of these errors and how R2 is calculated from these. 
+Below is a graphical depiction of these errors and how R2 is calculated from these.  
 
 
 
-<img src="rs3.jpg" width=400>
+<img src="rsq.png" width=600>
 
 #### And how do we interpret the outcome of R<sup>2</sup>
 
