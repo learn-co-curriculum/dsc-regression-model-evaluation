@@ -2,7 +2,7 @@
 # Coefficient of Determination
 
 ## Introduction
-For linear regression analysis, as we saw earlier, the straight does not **fully** describe the relationship between variables and there is always some error. In general, you'll want to determing a "goodness of fit"-measure of the fitted line. In this lesson, you'll learn about the "R-squared"($R^2$) measure, also known as the Coefficient of Determination.
+For linear regression analysis, as we saw earlier, the straight does not **fully** describe the relationship between variables and there is always some error. In general, you'll want to determing a "goodness of fit"-measure of the fitted line. In this lesson, you'll learn about the "R-Squared"($R^2$) measure, also known as the Coefficient of Determination.
 
 ## Objectives
 You will be able to:
@@ -16,20 +16,20 @@ You will be able to:
 
 Here is how it works. 
 
-R-squared uses a so-called "baseline" model which is the **worst** model. This baseline model does not make use of any independent variables to predict the value of dependent variable Y. Instead it uses the **mean** of the observed responses of dependent variable $y$ and always predicts this mean as the value of $y$ for any value of $x$. In the image below, this model is given by the straight green line.
+R-Squared uses a so-called "baseline" model which is the **worst** model. This baseline model does not make use of any independent variables to predict the value of dependent variable Y. Instead it uses the **mean** of the observed responses of dependent variable $y$ and always predicts this mean as the value of $y$ for any value of $x$. In the image below, this model is given by the straight green line.
 
 
 <img src="images/lin_reg_RSS.png" width=600>
 
-You can see that, in this plot, the baseline model always predicts mean of $y$ **irrespective** of the value of the $x$. The red line, however is our fitted regression line which makes use of $x$ values to predict the values of $y$. Looking at the plot above , R-squared simply asks the question:
+You can see that, in this plot, the baseline model always predicts mean of $y$ **irrespective** of the value of the $x$. The red line, however is our fitted regression line which makes use of $x$ values to predict the values of $y$. Looking at the plot above , R-Squared simply asks the question:
 
 >** Is our fitted regression line better than our baseline (worst) model ?**
 
-Any regression model that we fit is compared to this baseline model to understand its **goodness of fit**. Simply put, R-squared just explains how good is your model when compared to the baseline model. Thats about it. 
+Any regression model that we fit is compared to this baseline model to understand its **goodness of fit**. Simply put, R-Squared just explains how good is your model when compared to the baseline model. Thats about it. 
 
-### Great, so how do you calculate R-squared ?
+### Great, so how do you calculate R-Squared ?
 
-The mathematical formula to calculate R-squared for a linear regression line is in terms of **squared errors** for the fitted model and the baseline model. It's calculated as :
+The mathematical formula to calculate R-Squared for a linear regression line is in terms of **squared errors** for the fitted model and the baseline model. It's calculated as :
 
 $$ R^2 = 1- \dfrac{SS_{RES}}{SS_{TOT}} = \dfrac{\sum_i(y_i - \hat y_i)^2}{\sum_i(y_i - \overline y_i)^2} $$
 
@@ -38,7 +38,7 @@ $$ R^2 = 1- \dfrac{SS_{RES}}{SS_{TOT}} = \dfrac{\sum_i(y_i - \hat y_i)^2}{\sum_i
 
 * $SS_{TOT}$ (also called TSS)is the **Total** sum of squared error. $SS_{TOT}$ is the squared difference between $y$ and $\overline y$. For the one highlighted observation in our graph above, the $SS_{TOT}$ is denoted by the green arrow.
 
-Looking at this, you'll understand that you can interpret R-squared as "1 - the proportion of the variance _not_ explained by the model", which means as much as "the variation explained by the model". As a result, you'll want to maximize the R-squared.
+Looking at this, you'll understand that you can interpret R-Squared as "1 - the proportion of the variance _not_ explained by the model", which means as much as "the variation explained by the model". As a result, you'll want to maximize the R-Squared.
 
 For completion, 
 
@@ -59,7 +59,7 @@ On the other extreme, the best model could also be one that fits all the data po
 
 <img src="images/rs6.jpg" width=400>
 
-> **R-squared can take value between 0 and 1 where values closer to 0 represent a poor fit and values closer to 1 represent an (almost) perfect fit**
+> **R-Squared can take value between 0 and 1 where values closer to 0 represent a poor fit and values closer to 1 represent an (almost) perfect fit**
 
 ### Phrasing R-Squared values 
 
