@@ -9,7 +9,7 @@ You will be able to:
 
 * Describe squared error to identify the difference between predicted and actual values
 
-* Calculate the Coefficient of Deteremination (R-Squared) for a given regression line
+* Calculate the Coefficient of Determination (R-Squared) for a given regression line
 
 ## R-Squared
 > **The $R^2$ or Coefficient of determination is a statistical measure that is used to assess the goodness of fit of a regression model**
