@@ -16,12 +16,12 @@ You will be able to:
 
 Here is how it works. 
 
-R-Squared uses a so-called "baseline" model which is the **worst** model. This baseline model does not make use of any independent variables to predict the value of dependent variable Y. Instead it uses the **mean** of the observed responses of dependent variable $y$ and always predicts this mean as the value of $y$ for any value of $x$. In the image below, this model is given by the straight green line.
+R-Squared uses a so-called "baseline" model which is the **worst** model. This baseline model does not make use of any independent variables to predict the value of dependent variable Y. Instead, it uses the **mean** of the observed responses of the dependent variable $y$ and always predicts this mean as the value of $y$ for any value of $x$. In the image below, this model is given by the straight green line.
 
 
-<img src="images/lin_reg_RSS.png" width=600>
+<img src="images/lin_reg_RSS.png" width="600">
 
-You can see that, in this plot, the baseline model always predicts mean of $y$ **irrespective** of the value of the $x$. The red line, however is our fitted regression line which makes use of $x$ values to predict the values of $y$. Looking at the plot above , R-Squared simply asks the question:
+You can see that, in this plot, the baseline model always predicts the mean of $y$ **irrespective** of the value of the $x$. The red line, however, is our fitted regression line which makes use of $x$ values to predict the values of $y$. Looking at the plot above, R-Squared simply asks the question:
 
 >** Is our fitted regression line better than our baseline (worst) model ?**
 
@@ -31,7 +31,7 @@ Any regression model that we fit is compared to this baseline model to understan
 
 The mathematical formula to calculate R-Squared for a linear regression line is in terms of **squared errors** for the fitted model and the baseline model. It's calculated as :
 
-$$ R^2 = 1- \dfrac{SS_{RES}}{SS_{TOT}} = \dfrac{\sum_i(y_i - \hat y_i)^2}{\sum_i(y_i - \overline y_i)^2} $$
+$$ \large R^2 = 1- \dfrac{SS_{RES}}{SS_{TOT}} = \dfrac{\sum_i(y_i - \hat y_i)^2}{\sum_i(y_i - \overline y_i)^2} $$
 
 * $SS_{RES}$ (also called RSS) is the **Residual** sum of squared errors of our regression model also known as **$SSE$** (Sum of Squared Errors). $SS_{RES}$ is the squared difference between $y$ and $\hat y$. For the one highlighted observation in our graph above, the $SS_{RES}$ is denoted by the red arrow. This part of the error is not explained by our model.
 
@@ -45,19 +45,17 @@ For completion,
 * $SS_{EXP}$ (also called ESS) is the **Explained** sum of squared error. $SS_{EXP}$ is the squared difference between $\hat y$ and $\overline y$. For the one highlighted observation in our graph above, the $SS_{EXP}$ is denoted by the blue arrow.
 
 
-
-
 ### Let's interpret the outcome of $R^2$
 
 Our worst possible regression model could be the baseline model itself. In that case, the RSS is equal to TSS looking at the graph above. Then your R_squared value is 0. Look at the plot below, where you notice that $\hat y$ is simply a straight line.
 
 ![](images/rs5.gif)
 
-Due to this particular shape of the distribution, the regression line $\hat y$ is same as the mean line for $\overline y$. The R-Squared for this model is 0. It's clear that a straight line is probably not the right fit for this data.
+Due to this particular shape of the distribution, the regression line $\hat y$ is the same as the mean line for $\overline y$. The R-Squared for this model is 0. It's clear that a straight line is probably not the right fit for this data.
 
 On the other extreme, the best model could also be one that fits all the data points perfectly. Because the unexplained part of the variation is 0, R-Squared is 1–0, so 1 in this case, which indicates a perfect model. Below is an example of this (know that this will rarely happen with real world data).
 
-<img src="images/rs6.jpg" width=400>
+<img src="images/rs6.jpg" width="400">
 
 > **R-Squared can take value between 0 and 1 where values closer to 0 represent a poor fit and values closer to 1 represent an (almost) perfect fit**
 
