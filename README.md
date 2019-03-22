@@ -2,7 +2,7 @@
 # Coefficient of Determination
 
 ## Introduction
-For linear regression analysis, as we saw earlier, the straight does not **fully** describe the relationship between variables and there is always some error. In general, you'll want to determing a "goodness of fit"-measure of the fitted line. In this lesson, you'll learn about the "R-Squared"($R^2$) measure, also known as the Coefficient of Determination.
+For linear regression analysis, as we saw earlier, the straight does not **fully** describe the relationship between variables and there is always some error. In general, you'll want to determine a "goodness of fit"-measure of the fitted line. In this lesson, you'll learn about the "R-Squared"($R^2$) measure, also known as the Coefficient of Determination.
 
 ## Objectives
 You will be able to:
@@ -25,7 +25,7 @@ You can see that, in this plot, the baseline model always predicts the mean of $
 
 >** Is our fitted regression line better than our baseline (worst) model ?**
 
-Any regression model that we fit is compared to this baseline model to understand its **goodness of fit**. Simply put, R-Squared just explains how good is your model when compared to the baseline model. Thats about it. 
+Any regression model that we fit is compared to this baseline model to understand its **goodness of fit**. Simply put, R-Squared just explains how good is your model when compared to the baseline model. That's about it. 
 
 ### Great, so how do you calculate R-Squared ?
 
