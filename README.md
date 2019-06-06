@@ -16,7 +16,7 @@ You will be able to:
 
 Here is how it works. 
 
-R-Squared uses a so-called "baseline" model which is the **worst** model. This baseline model does not make use of any independent variables to predict the value of dependent variable Y. Instead, it uses the **mean** of the observed responses of the dependent variable $y$ and always predicts this mean as the value of $y$ for any value of $x$. In the image below, this model is given by the straight green line.
+R-Squared uses a so-called "baseline" model which is a very simple, naive model. This baseline model does not make use of any independent variables to predict the value of dependent variable Y. Instead, it uses the **mean** of the observed responses of the dependent variable $y$ and always predicts this mean as the value of $y$ for any value of $x$. In the image below, this model is given by the straight green line.
 
 
 <img src="images/linreg_rsq.png" width="600">
