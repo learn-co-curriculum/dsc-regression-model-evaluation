@@ -330,7 +330,7 @@ We have a value of about 0.95 as our coefficient of determination (R-squared). W
 
 This means that the proportion of the variance _explained_ by our model out of the _total_ variance is about 0.95, or 95%. You can also say, ***95% of the variation in $y$ is explained by our model***.
 
-R-Squared can take a value between 0 and 1 where values closer to 0 represent a poor fit and values closer to 1 represent an (almost) perfect fit
+For a least-squares regression model, R-Squared can take a value between 0 and 1 where values closer to 0 represent a poor fit and values closer to 1 represent an (almost) perfect fit
 
 An R-Squared of 0 would mean that we are explaining 0% of the variation in $y$. This is especially likely to occur if your dataset is not actually suited to linear regression modeling, like the image below.
 
@@ -377,6 +377,8 @@ TSS is also equal to the sum of RSS + ESS. In other words, the total error is th
 ### R-Squared
 
 In the equation above, we said that R-Squared was equal to $\frac{ESS}{TSS}$. You also might see versions that say it is equal to $1 - \frac{RSS}{TSS}$. This is derived from the explanation above, that TSS = RSS + ESS.
+
+**If you use the $1 - \frac{RSS}{TSS}$ version of the R-Squared formula, it is possible to get a negative R-Squared value.** Many statistical libraries use this formula for that reason. A negative R-Squared would mean that your model is worse at explaining the variance than the baseline model. If you see a negative R-Squared with ordinary least-squares linear regression, that probably means that something is wrong with the code, because a linear regression with an independent variable is built on top of an intercept-only model.
 
 ## Summary
 
