@@ -29,7 +29,7 @@ You can see that, in this plot, the intercept-only model (orange) always predict
 
 In order to evaluate the regression model, we ask: **is our fitted regression line better than an intercept-only model?**
 
-We will determine this answer in terms of both statistical significance and goodness-of-fit by comparing the the ***errors*** made by our model (gray vertical arrow) to the errors made by the intercept-only model (orange vertical arrow) and determining the difference between them (red vertical arrow).
+We will determine this answer in terms of both statistical significance and goodness-of-fit by comparing the the ***errors*** made by our model (red vertical arrow) to the errors made by the intercept-only model (orange vertical arrow) and determining the difference between them (gray vertical arrow).
 
 ## Toy Dataset Example
 
